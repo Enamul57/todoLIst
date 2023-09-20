@@ -1,0 +1,47 @@
+@use '../utils/index.scss';
+
+* {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    color: black;
+    list-style-type:none;
+
+}
+
+body {
+    background: index.$app-bg;
+}
+
+input:focus {
+    outline: none;
+}
+
+label {
+    text-align: center;
+    padding: 1em;
+    font-size: index.$label-font;
+    font-weight: 500;
+    color: #112066;
+}
+ul{
+    text-decoration: none;
+    list-style:none;
+   
+    li{
+        display: flex;
+        padding:0.5rem;
+        font-size:1em;
+        width:95%;
+        position: relative;
+        span{
+            width:5%;
+            right:0;
+            font-size:1.5em;
+            position:absolute;
+        }
+    }
+   
+}
